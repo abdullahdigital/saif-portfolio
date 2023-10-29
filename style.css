@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+h1 ,h2, .h2 ,h3 ,span,ul li,.toggleTheme{
+  overflow-x: visible;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background: #1f242d;
+  color: white;
+}
+#preloader{
+    background: #000 url(img/loader3.webp) no-repeat center center;
+    /* background-size: 25%; */
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+ 
+
+  .h2{
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+
+/* Contact Me section styles */
+.section {
+padding: 50px 50px;
+background-color: #f7f7f7;
+}
+
+
+.btn {
+display: inline-block;
+padding: 10px 20px;
+border-radius: 5px;
+font-weight: bold;
+text-transform: uppercase;
+background-color: #007bff;
+color: #fff;
+transition: all 0.3s ease;
+}
+
+.btn:hover {
+background-color: #0056b3;
+}
+
+.myimg{
+  width: 30vw;
+  padding-top: 10%;
+  animation: floatimg 4s ease-in-out infinite;
+}
+@keyframes floatimg{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-2.4rem);
+ 
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+/* Footer */
+.fab{
+padding: 10px;
+}
+.face1{
+font-size: 1.6rem;
+}
+.face1:hover{
+  font-size: 1.8rem;
+}
+.down{
+  border-radius: 10px;
+}
+.front{
+  color: blue;
+}
+.aboutfont{
+  font-size: 20px;
+}
+.box1{
+  cursor: pointer;
+  overflow: hidden;
+ /*  box-shadow: 0 0.5rem 1rem rgb(0, 0, 0.3); */
+  position: relative;
+  border-radius: 2rem;
+}
+.invisibecontent{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: rgb(255, 255, 255,0.9);
+}
+.box1:hover .invisibecontent{
+  position: absolute;
+  top: 0;
+  color: blue;
+  
+}
+.space{
+  margin-top: 5%;
+}
+.dark{
+  font-weight: bold;
+}
+.lis{
+  list-style: none;
+}
+html.sr .home-content {
+  visibility: hidden;
+}
+.ho{
+  font-family: 'Times New Roman', Times, serif;
+}
+.ho:hover{
+  color: red;
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+@media screen and (min-width:300px) and (max-width:499px){
+.dekh{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.toggle-btn5{
+  width: 20%;
+  margin-left: 10%;
+}
+#navbar{
+  margin-bottom: 10%;
+}
+body{
+  padding-top: 80px;
+}
+
+}
+:root {
+  --main: #0011ff;
+}
+@media screen and (min-width:500px) and (max-width:986px){
+.dekh{
+ display: flex;
+ flex-direction: row;
+  max-width: 100%;
+}
+.toggle-btn5{
+  width: 100px;
+}
+  body{
+    padding-top: 80px;
+  }
+}
+@media screen and (min-width:987px) and (max-width:1193px){
+  .toggle-btn5{
+    width: 100px;
+    margin-left: 30px;
+  }
+}
+:root{
+  --backgroud-color:#fff;
+  --text-color:#555;
+  --title-color:#000;
+}
+.dark-theme{
+  --backgroud-color:#000;
+  --text-color:white;
+  --title-color:#fff;
+}
+body{
+  background: var(--backgroud-color);
+  color: var(--text-color);
+  transition: background 0.8s,color 0.8s;
+}
+.toggle-btn5{
+  border: 2px solid blue;
+  border-radius: 10%;
+  background-color:  #444444;
+  color: white;
+  cursor: pointer;
+}
+.whyIcon{
+  margin-left: -12px;
+  margin-top: -3px;
+}
+.saif{
+  display: flex;
+  align-items: center;
+  margin-right: 7rem !important;
+  margin-left: -2rem !important;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+}
+.whatsapp1{
+  padding-top: -3rem !important;
+}
