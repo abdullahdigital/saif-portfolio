@@ -211,3 +211,33 @@ body{
 .whatsapp1{
   padding-top: -3rem !important;
 }
+
+.navbar {
+  height: 4rem !important;
+  padding: 0px 12px !important;
+  overflow: visible !important;
+}
+
+.navbar-brand img {
+  height: 6.5rem;
+  width: auto;
+  object-fit: contain;
+  max-width: none;
+}
+
+.navbar {
+  padding: 5px 12px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-brand img {
+    height: 85px;
+    position: static; /* no overflow on mobile */
+  }
+
+  .navbar {
+    overflow: hidden !important;
+    height: 75px !important;
+    overflow: visible !important;
+  }
+}
