@@ -212,47 +212,39 @@ body{
   padding-top: -3rem !important;
 }
 
-/* DELETE all existing .navbar and .navbar-brand img rules, then add this: */
-
 .navbar {
-  padding: 0px 12px !important;
-  min-height: 70px;
+  height: 70px !important;
+  min-height: 70px !important;
+  max-height: 70px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
 }
 
 .navbar-brand {
-  padding: 0;
-  margin: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
 .navbar-brand img {
-  height: 55px;
+  height: 60px;
   width: auto;
   object-fit: contain;
+  display: block;
+  flex-shrink: 0;
 }
 
-/* Mobile responsive */
+
 @media screen and (max-width: 992px) {
-  .navbar {
-    min-height: 60px;
-    padding: 5px 12px !important;
-  }
-  
   .navbar-brand img {
-    height: 45px;
+    height: 85px;
+    position: static; /* no overflow on mobile */
   }
-  
-  .navbar-collapse {
-    background: var(--backgroud-color);
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 10px;
-    max-height: 80vh;
-    overflow-y: auto;
-  }
-}
 
-@media screen and (max-width: 480px) {
-  .navbar-brand img {
-    height: 38px;
+  .navbar {
+    overflow: hidden !important;
+    height: 75px !important;
+    overflow: visible !important;
   }
 }
