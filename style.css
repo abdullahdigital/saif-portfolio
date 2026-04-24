@@ -171,7 +171,7 @@ body{
 @media screen and (min-width:987px) and (max-width:1193px){
   .toggle-btn5{
     width: 100px;
-    margin-left: 30px;
+    margin-left: 3rem;
   }
 }
 :root{
@@ -248,14 +248,7 @@ body{
     margin: -5px 0;
   }
   
-  .navbar-collapse {
-    background: var(--backgroud-color);
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 10px;
-    max-height: 80vh;
-    overflow-y: auto;
-  }
+
 }
 
 @media screen and (max-width: 480px) {
