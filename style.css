@@ -212,39 +212,55 @@ body{
   padding-top: -3rem !important;
 }
 
+/* Replace all navbar CSS with this */
+
 .navbar {
-  height: 70px !important;
-  min-height: 70px !important;
-  max-height: 70px !important;
-  padding: 0 !important;
-  overflow: hidden !important;
+  padding: 0 12px !important;
+  min-height: 65px;
 }
 
 .navbar-brand {
-  height: 70px;
   display: flex;
   align-items: center;
-  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  overflow-y: hidden;
+  pointer-events: none;
 }
 
 .navbar-brand img {
-  height: 60px;
+  height: 70px;
   width: auto;
   object-fit: contain;
-  display: block;
-  flex-shrink: 0;
+  margin: -10px 0;
 }
 
-
+/* Mobile responsive */
 @media screen and (max-width: 992px) {
-  .navbar-brand img {
-    height: 85px;
-    position: static; /* no overflow on mobile */
-  }
-
   .navbar {
-    overflow: hidden !important;
-    height: 75px !important;
-    overflow: visible !important;
+    min-height: 55px;
+    padding: 5px 12px !important;
+  }
+  
+  .navbar-brand img {
+    height: 55px;
+    margin: -5px 0;
+  }
+  
+  .navbar-collapse {
+    background: var(--backgroud-color);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-brand img {
+    height: 48px;
+    margin: -3px 0;
   }
 }
